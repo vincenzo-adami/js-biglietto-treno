@@ -22,4 +22,7 @@ else if (age >= 65) {
 // calcolo il prezzo con sole 2 cifre decimali
 let prezzoUmano = Math.round(prezzoFinale * 100) / 100;
 
-console.log('Prezzo finale biglietto: €' + prezzoUmano); 10
+console.log('Prezzo finale biglietto: €' + prezzoUmano);
+
+document.getElementById('price').setAttribute("class", "");
+document.getElementById('price').innerHTML = 'Prezzo finale biglietto: €' + prezzoUmano;
